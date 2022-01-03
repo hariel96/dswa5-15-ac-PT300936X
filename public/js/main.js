@@ -1,4 +1,6 @@
-angular.module('ifsp', ['ngRoute', 'ngResource']).config(function($routeProvider) {
+angular.module('ifsp', ['ngRoute', 'ngResource']).config(function($routeProvider, $httpProvider) {
+
+    $httpProvider.interceptors.push('meuInterceptor');
 
     $routeProvider.when('/contatos', {
         templateUrl: 'partials/contatos.html',
@@ -28,6 +30,10 @@ angular.module('ifsp', ['ngRoute', 'ngResource']).config(function($routeProvider
     $routeProvider.when('/curso', {
         templateUrl: 'partials/curso.html',
         controller: 'CursoController'
+    });
+
+    $routeProvider.when('/auth', {
+        templateUrl: 'partials/auth.html'
     });
 
 

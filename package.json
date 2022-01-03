@@ -1,24 +1,29 @@
 {
-  "name": "aula_05",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "preinstall": "npx npm-force-resolutions"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "ejs": "^0.8.8",
-    "express": "^4.17.1",
-    "express-load": "^1.1.16",
-    "method-override": "^2.3.10",
-    "mongodb": "^3.6.2",
-    "mongoose": "^5.10.5",
-    "uglify-js": "^3.8.0"
-  },
-  "engines": {
-    "node": "10.x"
-  }
+    "name": "semana_16",
+    "version": "1.0.0",
+    "description": "Autenticação com Passport",
+    "main": "index.js",
+    "scripts": {
+        "preinstall": "npx npm-force-resolutions"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cookie-parser": "^1.4.6",
+        "ejs": "^0.8.8",
+        "express": "^4.17.1",
+        "express-load": "^1.1.16",
+        "express-session": "^1.17.2",
+        "method-override": "^2.3.10",
+        "mongodb": "^3.6.2",
+        "mongoose": "^5.10.5",
+        "mongoose-findorcreate": "^3.0.0",
+        "passport": "^0.5.2",
+        "passport-github": "^1.1.0",
+        "uglify-js": "^3.8.0"
+    },
+    "engines": {
+        "node": "12.x"
+    }
 }
